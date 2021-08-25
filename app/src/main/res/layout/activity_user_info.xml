@@ -9,10 +9,26 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/userNameTextView" />
+        android:id="@+id/userNameTextView"
+        android:textSize="24sp"
+        android:layout_marginBottom="10dp"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/phoneTextView"/>
+        android:id="@+id/phoneTextView"
+        android:textSize="24sp"
+        android:layout_marginBottom="10dp"/>
+    <Button
+        android:id="@+id/editUserDataBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Редактировать" />
+    <Button
+        android:id="@+id/deleteUserBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Удалить пользователя"/>
+
+
 
 </LinearLayout>
