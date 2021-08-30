@@ -25,7 +25,7 @@ public class Users {
     }
 
     public void addUser(User user){
-        String host = "http://0988.vozhzhaev.ru/handlerAddUser.php?name="+user.getUserName()+"&lastname="+user.getUserLastName()+"&phone="+user.getPhone()+"&uuid="+user.getUuid().toString();
+        /*String host = "http://0988.vozhzhaev.ru/handlerAddUser.php?name="+user.getUserName()+"&lastname="+user.getUserLastName()+"&phone="+user.getPhone()+"&uuid="+user.getUuid().toString();
         Runnable runnable = new Runnable() {
             @Override
             public void run() {
@@ -46,9 +46,9 @@ public class Users {
             }
         };
         Thread t = new Thread(runnable);
-        t.start();
-        /*ContentValues values = getContentValues(user);
-        database.insert(UserDbSchema.UserTable.NAME, null, values);*/
+        t.start();*/
+        ContentValues values = getContentValues(user);
+        database.insert(UserDbSchema.UserTable.NAME, null, values);
     }
 
     public void updateUser(User user){
